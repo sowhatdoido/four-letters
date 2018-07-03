@@ -1,0 +1,70 @@
+.LetterButtonWrapper {
+  width: 25vw;
+  max-width: 150px;
+  padding: 10px;
+  position: absolute;
+  box-sizing: border-box;
+  display: inline-block;
+  transform: translateY(-100%);
+  transition: all 250ms ease-out;
+}
+
+.LetterButton {
+  position: relative;
+  width: 100%;
+  padding-top: 110%;
+  cursor: pointer;
+  font-weight: bold;
+  background: #3d9ce7;
+  color: #FFF;
+  border: none;
+  opacity: 1;
+  box-shadow: 0px 10px 0 0 #2b6fa5;
+  box-sizing: border-box;
+}
+
+.LetterButton:active {
+  transform: translateY(10px);
+  box-shadow: 0px 0 0 0 #2b6fa5;
+  opacity: 0.8;
+}
+
+.LetterButtonText {
+  font-size: 50px;
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  will-change: transform;
+}
+
+.start0 {
+  transform: translate3d(0%, 100%, 0);
+}
+.start1 {
+  transform: translate3d(100%, 100%, 0);
+}
+.start2 {
+  transform: translate3d(200%, 100%, 0);
+}
+.start3 {
+  transform: translate3d(300%, 100%, 0);
+}
+
+.end0 {
+  opacity: 0.7;
+  transform: translate3d(0%, -100%, 0);
+}
+.end1 {
+  opacity: 0.7;
+  transform: translate3d(100%, -100%, 0);
+}
+.end2 {
+  opacity: 0.7;
+  transform: translate3d(200%, -100%, 0);
+}
+.end3 {
+  opacity: 0.7;
+  transform: translate3d(300%, -100%, 0);
+}
